@@ -335,7 +335,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-300">© 2025 Dawson Robotics. All Rights Reserved to Pierre-Alexandre M. Fignole.</p>
+                <p class="text-gray-300">© 2025 Dawson Robotics. All Rights Reserved to <a id="contact-email" data-user="pamfignole07" data-domain="gmail.com" class="text-gray-300 hover:text-primary hover:underline transition-fast font-semibold">Pierre-Alexandre M. Fignole</a>.</p>
             </div>
         </div>
     </footer>
@@ -364,6 +364,18 @@
             alert(`Thank you for subscribing with email: ${email}`);
             e.target.reset();
         });
+
+        // Footer email obfuscation to reduce scraping
+        (() => {
+            const emailLink = document.getElementById('contact-email');
+            if (!emailLink) return;
+            const user = emailLink.dataset.user || '';
+            const domain = emailLink.dataset.domain || '';
+            if (!user || !domain) return;
+            const address = `${user}@${domain}`;
+            emailLink.href = `mailto:${address}`;
+            emailLink.setAttribute('aria-label', `Email ${emailLink.textContent}`);
+        })();
     </script>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
