@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dawson Robotics</title>
+    <meta name="description" content="Explore Dawson Robotics' innovative projects, technical achievements, and competition results. Discover our autonomous systems, competition bots, and research initiatives.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdawsonrob3175back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary">
+    <!-- Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <img src ="assets/main_logo.png" alt ="Our Logo">
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">Dawson Robotics</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="teams.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Teams</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+						<a href="https://discord.gg/4de29rXUWg" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm" target="_blank">Join Us</a>
+                        <a href="projects.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+						<a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="btn-primary text-sm" target="_blank">Support Us</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary transition-fast">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-surface-200">
+                    <a href="homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+					<a href="teams.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Teams</a>
+					<a href="about.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+					<a href="https://discord.gg/4de29rXUWg" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm" target="_blank">Join Us</a>
+					<a href="projects.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+					<a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="btn-primary text-sm" target="_blank">Support Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-20 lg:py-32">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-text-primary mb-6">
+                    Our <span class="text-gradient">Projects</span>
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Discover our innovative robotics projects, from autonomous navigation systems to competition-winning designs. Each project represents our commitment to technical excellence and collaborative innovation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#featured-projects" class="btn-primary text-lg px-8 py-4">View Featured Projects</a>
+                    <a href="#ongoing-projects" class="btn-secondary text-lg px-8 py-4">Parts Used</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Categories Filter -->
+                <!-- <section class="py-12 bg-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-wrap justify-center gap-4 mb-8">
+                            <button class="filter-btn active" data-category="all">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                                </svg>
+                                All Projects
+                            </button>
+                            <button class="filter-btn" data-category="autonomous">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                Autonomous Systems
+                            </button>
+                            <button class="filter-btn" data-category="competition">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                                Competition Bots
+                            </button>
+                            <button class="filter-btn" data-category="research">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Research Projects
+                            </button>
+                            <button class="filter-btn" data-category="parts">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20a3 3 0 01-3-3v-2a3 3 0 013-3h10a3 3 0 013 3v2a3 3 0 01-3 3H7z"/>
+                                </svg>
+                                Parts Used
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <button id="reset-filters" class="text-primary hover:text-primary-600 font-medium transition-fast">
+                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                                Reset Filters
+                            </button>
+                        </div>
+                    </div>
+                </section> -->
+
+        <!-- Featured Projects -->
+        <section id="featured-projects" class="py-16 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Featured Projects</h2>
+                    <p class="text-xl text-text-secondary">Our most impactful and innovative robotics achievements</p>
+                </div>
+
+                <!-- Project 1: Autonomous Navigation Robot -->
+                <div class="project-card autonomous mb-16">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Completed</span>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Autonomous Systems</span>
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4">Autonomous Navigation Robot</h3>
+                            <p class="text-text-secondary mb-6 text-lg leading-relaxed">
+                                Our flagship autonomous navigation system uses advanced computer vision and machine learning algorithms to navigate complex environments. The robot successfully completed a 50-meter obstacle course with 98% accuracy, demonstrating real-world applicability for warehouse automation and search-and-rescue operations.
+                            </p>
+                            <div class="border-accent-left mb-6">
+                                <h4 class="font-semibold mb-2">Technical Specifications</h4>
+                                <ul class="text-text-secondary space-y-1">
+                                    <li>• LIDAR-based SLAM navigation system</li>
+                                    <li>• Real-time object detection using YOLOv5</li>
+                                    <li>• ROS2 framework with custom path planning algorithms</li>
+                                    <li>• 12-hour battery life with autonomous charging capability</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">SLAM</span>
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm">ROS2</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="javascript:void(0)" class="btn-primary">View Documentation</a>
+                                <a href="javascript:void(0)" class="btn-secondary">GitHub Repository</a>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1549554443-d204b8540c1f" 
+                                 alt="Autonomous navigation robot with LIDAR sensors and cameras navigating through an obstacle course in laboratory setting" 
+                                 class="rounded-lg shadow-card w-full h-96 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div class="absolute top-4 right-4 bg-accent text-white px-3 py-2 rounded-lg font-semibold">
+                                1st Place Winner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Competition Bot -->
+                <div class="project-card competition mb-16">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="lg:order-2">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Champion</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Competition Bot</span>
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4">Quebec Robotics Championship Bot</h3>
+                            <p class="text-text-secondary mb-6 text-lg leading-relaxed">
+                                Our competition robot dominated the 2024 Quebec Robotics Championship, securing first place with innovative mechanical design and precision control systems. The bot completed all challenges in record time, showcasing our team's engineering excellence and strategic thinking.
+                            </p>
+                            <div class="border-accent-left mb-6">
+                                <h4 class="font-semibold mb-2">Competition Results</h4>
+                                <ul class="text-text-secondary space-y-1">
+                                    <li>• 1st Place - Quebec Robotics Championship 2024</li>
+                                    <li>• Best Design Award - Innovation in Mechanical Systems</li>
+                                    <li>• Fastest Completion Time: 2:34 minutes</li>
+                                    <li>• Perfect Score: 100/100 points</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Precision Control</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Mechanical Design</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Competition Ready</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="javascript:void(0)" class="btn-primary">Competition Video</a>
+                                <a href="javascript:void(0)" class="btn-secondary">Build Guide</a>
+                            </div>
+                        </div>
+                        <div class="lg:order-1 relative">
+                            <img src="https://images.unsplash.com/photo-1597007519573-0575fd4cc96b" 
+                                 alt="Championship-winning competition robot with precise mechanical arms and sensors on competition field" 
+                                 class="rounded-lg shadow-card w-full h-96 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-2 rounded-lg font-semibold">
+                                Championship Winner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Research Project -->
+                <div class="project-card research">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">In Progress</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Research Project</span>
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4">AI-Powered Swarm Robotics</h3>
+                            <p class="text-text-secondary mb-6 text-lg leading-relaxed">
+                                Our cutting-edge research project explores collaborative AI systems using multiple small robots working together to solve complex tasks. This project has attracted attention from industry partners and academic institutions, positioning Dawson Robotics at the forefront of swarm intelligence research.
+                            </p>
+                            <div class="border-accent-left mb-6">
+                                <h4 class="font-semibold mb-2">Research Objectives</h4>
+                                <ul class="text-text-secondary space-y-1">
+                                    <li>• Develop distributed decision-making algorithms</li>
+                                    <li>• Implement real-time swarm coordination protocols</li>
+                                    <li>• Test scalability with 10+ robot units</li>
+                                    <li>• Publish findings in peer-reviewed journals</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Swarm Intelligence</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Distributed Systems</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="javascript:void(0)" class="btn-primary">Research Paper</a>
+                                <a href="javascript:void(0)" class="btn-secondary">Progress Updates</a>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1723873293997-cf17f5c958d6" 
+                                 alt="Multiple small robots working together in coordinated formation demonstrating swarm intelligence algorithms" 
+                                 class="rounded-lg shadow-card w-full h-96 object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-2 rounded-lg font-semibold">
+                                Research Phase
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ongoing Projects Dashboard -->
+        <section id="ongoing-projects" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Robots Components</h2>
+                    <p class="text-xl text-text-secondary">See what we're building with right now</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Part 1 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/claw-servo-mount[2].png" 
+                             alt="Mounting bracket for servo motor in robotic claw mechanism" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Extrusion Slider Mount</h3>
+                        <p class="text-text-secondary mb-4">Used as a mounting mechanism for a cable and a nylon extrusion sliding part. It includes a circular opening which is precisely modeled to press-fit a 1/2 hex mount bearing.</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 2 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/flinger[1].png" 
+                             alt="Ramp and flywheel mount for launching torus-shaped game pieces in robotics competition" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Game Piece Flywheel Mechanism</h3>
+                        <p class="text-text-secondary mb-4">This ramp and flywheel mount allows the torus-shaped game piece used for the CRC TakTik 2025 competition to be precisely guided along the wheel, maximizing the arc length where the GP and flywheel are in contact.</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 3 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/grabber[1].png" 
+                             alt="Mounting bracket for servo motor in robotic claw mechanism" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Game Piece Grabber</h3>
+                        <p class="text-text-secondary mb-4">Grabs game pieces from a pile by sliding triangular rails under their chamfered edges. Three MG90S servo motors are mounted on the side of the grabber to individually control piece release doors.</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 4  -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/pulley-bottom[1].png" 
+                             alt="Couplable spool mounted on hexagonal shaft for synchronized cable coiling" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Couplable Spool</h3>
+                        <p class="text-text-secondary mb-4">Two spools are mounted on an hexagonal shaft with the circular holes facing each other. This allows a steel cable to be passed through both spool, thus synchronizing the rate at which both end of the cable are being coiled around each spool.</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 5 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/pulley-top[1].PNG" 
+                             alt="Mounting bracket for servo motor in robotic claw mechanism" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Pulley Mount</h3>
+                        <p class="text-text-secondary mb-4">A circular 6.7 mm diameter hole on the mount and pulley allowed a thin cushion of air to rotate between the internal wall of the hole and a 6.5 mm diameter round steel bar inserted into it. Those precisely tuned tolerances allow an almost friction-less rotation of the pulley.</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 6 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/wheel-assembly[1].png" 
+                             alt="Humanoid robot with advanced sensors and actuators in laboratory research environment" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Wheel Assembly</h3>
+                        <p class="text-text-secondary mb-4">8-inch Mecanum wheels were coupled with RS550 12V motors to allow for three degrees of freedom in the movement of our robot (horizontal, linear and yaw).</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+
+                    <!-- Part 7 -->
+                    <div class="project-card parts card">
+                        <div class="flex items-center justify-between mb-4">
+                        </div>
+                        <img src="assets/robot-base[1].png" 
+                             alt="Sturdy aluminum extrusion frame of competition robot on playing field" 
+                             class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold mb-2">Robot Base</h3>
+                        <p class="text-text-secondary mb-4">1-inch aluminum extrusion are used in the frame of the robot to ensure rigidity under any circumstances on the CRC playing field. A member of the team managed to stand on the frame and get transported by the robot without any reported failure!</p>
+                        <div class="flex items-center justify-between">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competition Results -->
+        <section class="py-16 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Competition Results</h2>
+                    <p class="text-xl text-text-secondary">Our track record of excellence in robotics competitions</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-accent mb-2">1st Place</h3>
+                        <p class="text-text-secondary">Quebec Robotics Championship 2024</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">2nd Place</h3>
+                        <p class="text-text-secondary">Canadian University Robotics Competition</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-success mb-2">Best Design</h3>
+                        <p class="text-text-secondary">Innovation Award - Montreal Tech Expo</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-secondary mb-2">15 Projects</h3>
+                        <p class="text-text-secondary">Successfully completed in 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Documentation -->
+        <!-- <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Technical Resources</h2>
+                    <p class="text-xl text-text-secondary">Access our project documentation, code repositories, and build guides</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Project Documentation</h3>
+                        <p class="text-text-secondary mb-4">Detailed technical specifications, design processes, and implementation guides</p>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 font-medium">Download PDFs →</a>
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Code Repositories</h3>
+                        <p class="text-text-secondary mb-4">Open-source code, libraries, and development tools for all our projects</p>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 font-medium">Visit GitHub →</a>
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547A8.014 8.014 0 004 21h16a8.014 8.014 0 00-.244-5.572z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Build Instructions</h3>
+                        <p class="text-text-secondary mb-4">Step-by-step assembly guides, parts lists, and troubleshooting tips</p>
+                        <a href="javascript:void(0)" class="text-primary hover:text-primary-600 font-medium">Access Guides →</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Future Projects Roadmap -->
+        <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Future Innovation</h2>
+                <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+                    Explore our roadmap for upcoming projects and research initiatives that will shape the future of robotics
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Q1 2025</h3>
+                        <p class="text-primary-100">Underwater exploration robot for marine research applications</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Q2 2025</h3>
+                        <p class="text-primary-100">AI-powered agricultural monitoring system with drone integration</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">Q3 2025</h3>
+                        <p class="text-primary-100">Collaborative human-robot workspace for manufacturing assistance</p>
+                    </div>
+                </div>
+                <a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-fast">
+                    Support Our Innovation Journey
+                </a>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src ="assets/main_logo.png" alt ="Our Logo" class="logo_end">
+                        <h3 class="text-xl font-bold">Dawson Robotics</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Building the future through robotics education and innovation. Join our community of passionate students and industry professionals.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/dawson_robotics_team?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                        <a href="https://discord.gg/Chat5t7M" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/discord.png" alt="Discord" class="w-6 h-6">
+                        </a>
+                        <a href="https://www.linkedin.com/company/dawson-robotics-team/" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/link.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="https://pinterest.com/dawsonrobotics" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/youtube.png" alt="Youtube" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-fast">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary transition-fast">About</a></li>
+                        <li><a href="teams.html" class="text-gray-300 hover:text-primary transition-fast">Teams</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-primary transition-fast">Projects</a></li>
+                        <li><a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="text-gray-300 hover:text-primary transition-fast">Donate</a></li>
+                        <li><a href="https://discord.gg/Chat5t7M" class="text-gray-300 hover:text-primary transition-fast">Support Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Dawson College</li>
+                        <li>3040 Sherbrooke St W</li>
+                        <li>Montreal, QC H3Z 1A4</li>
+                        <li>dawsonrobotic@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Dawson Robotics. All Rights Reserved to Pierre-Alexandre M. Fignole.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .filter-btn {
+            @apply flex items-center px-4 py-2 rounded-lg border border-surface-200 text-text-secondary hover:text-primary hover:border-primary transition-fast;
+        }
+        
+        .filter-btn.active {
+            @apply bg-primary text-white border-primary;
+        }
+        
+        .project-card {
+            @apply transition-all duration-300;
+        }
+        
+        .project-card.hidden {
+            @apply opacity-0 scale-95 pointer-events-none;
+        }
+    </style>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Project filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const resetButton = document.getElementById('reset-filters');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (category === 'all' || card.classList.contains(category)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Reset filters
+        resetButton.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons[0].classList.add('active'); // Activate "All Projects"
+            
+            projectCards.forEach(card => {
+                card.classList.remove('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

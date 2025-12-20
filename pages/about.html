@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dawson Robotics</title>
+    <meta name="description" content="Learn about Dawson Robotics' mission, values, and journey from a small student group to Quebec's leading educational robotics community. Discover our commitment to hands-on learning and innovation.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdawsonrob3175back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary">
+    <!-- Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <img src ="assets/main_logo.png" alt ="Our Logo">
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">Dawson Robotics</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="teams.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Teams</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+						<a href="https://discord.gg/4de29rXUWg" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm" target="_blank">Join Us</a>
+                        <a href="projects.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+						<a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="btn-primary text-sm" target="_blank">Support Us</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary transition-fast">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-surface-200">
+                    <a href="homepage.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Home</a>
+					<a href="teams.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Teams</a>
+					<a href="about.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+					<a href="https://discord.gg/4de29rXUWg" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm" target="_blank">Join Us</a>
+					<a href="projects.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+					<a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="btn-primary text-sm" target="_blank">Support Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-20 lg:py-32">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-text-primary mb-6">
+                        About <span class="text-gradient">Us</span>
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+						The Dawson College Robotics Team is a
+						student-run, multidisciplinary group that
+						designs, builds, and competes in the
+						annual Canadian Robotics Competition
+						(CRC).
+						We bring together students from
+						Engineering Technologies, Computer
+						Science, Industrial Design, Business, and
+						the Arts to collaborate on innovative
+						projects that blend creativity, teamwork,
+						and technical problem-solving.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission, Vision & Values -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Mission, Vision & Values</h2>
+                    <p class="text-xl text-text-secondary">The principles that guide everything we do</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Mission -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Our Mission</h3>
+                        <p class="text-text-secondary leading-relaxed">
+							We inspire Dawson students to
+							apply classroom knowledge to
+							real-world engineering challenges.
+							Our team promotes hands-on
+							learning, collaboration, and
+							leadership — helping members
+							develop the technical and
+							interpersonal skills needed in
+							modern industries.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-secondary">Our Vision</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            To be recognized as Canada's premier student robotics community, where curiosity meets precision and collaborative innovation shapes the future of technology education.
+                        </p>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-accent">Our Values</h3>
+                        <p class="text-text-secondary leading-relaxed">
+							Innovation • Education • Sustainability • Teamwork
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founding Story -->
+        <section class="py-16 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="border-accent-left mb-6">
+                            <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">Our Founding Story</h2>
+                            <p class="text-lg text-text-secondary mb-6 leading-relaxed">
+                                In September 2018, five engineering students at Dawson College shared a common frustration: the gap between theoretical classroom learning and practical application. Armed with nothing but curiosity and a borrowed Arduino kit, they began meeting in a small storage room after classes.
+                            </p>
+                            <p class="text-lg text-text-secondary mb-6 leading-relaxed">
+                                What started as informal tinkering sessions quickly evolved into structured projects. By winter 2019, word had spread, and our membership grew to 15 passionate students. We secured our first official meeting space and participated in our inaugural competition—the Quebec Student Robotics Challenge.
+                            </p>
+                            <p class="text-lg text-text-secondary leading-relaxed">
+                                Today, Dawson Robotics stands as a testament to what happens when curiosity meets opportunity. We've grown from that small storage room to a fully-equipped workshop, from 5 founding members to over 50 active participants, and from local competitions to national recognition.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="assets/old-club.png" 
+                             alt="Historical photo of Dawson Robotics founding members working together in their first workshop space with early robotics prototypes" 
+                             class="rounded-lg shadow-card w-full h-96 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-lg shadow-card">
+                            <div class="text-2xl font-bold">2004 - 2005</div>
+                            <div class="text-sm">Founded</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Our Journey</h2>
+                    <p class="text-xl text-text-secondary">Major milestones in our evolution</p>
+                </div>
+
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-surface-200 hidden lg:block"></div>
+                    
+                    <div class="space-y-12">
+                        <!-- 2004 - 2005 -->
+                        <div class="flex flex-col lg:flex-row items-center">
+                            <div class="lg:w-1/2 lg:pr-8 text-center lg:text-right">
+                                <div class="bg-primary text-white inline-block px-4 py-2 rounded-full font-semibold mb-4">2004 - 2005</div>
+                                <h3 class="text-xl font-semibold mb-2">Club Foundation</h3>
+                                <p class="text-text-secondary">Five students establish Dawson Robotics with a vision to bridge theory and practice</p>
+                            </div>
+                            <div class="hidden lg:block w-4 h-4 bg-primary rounded-full border-4 border-white shadow-card relative z-10"></div>
+                            <div class="lg:w-1/2 lg:pl-8"></div>
+                        </div>
+
+                        <!-- 2019 -->
+                        <div class="flex flex-col lg:flex-row items-center">
+                            <div class="lg:w-1/2 lg:pr-8"></div>
+                            <div class="hidden lg:block w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-card relative z-10"></div>
+                            <div class="lg:w-1/2 lg:pl-8 text-center lg:text-left">
+                                <div class="bg-secondary text-white inline-block px-4 py-2 rounded-full font-semibold mb-4">2019</div>
+                                <h3 class="text-xl font-semibold mb-2">First Competition</h3>
+                                <p class="text-text-secondary">Debut at Quebec Student Robotics Challenge, placing 3rd in our category</p>
+                            </div>
+                        </div>
+
+                        <!-- 2022 -->
+                        <div class="flex flex-col lg:flex-row items-center">
+                            <div class="lg:w-1/2 lg:pr-8 text-center lg:text-right">
+                                <div class="bg-accent text-white inline-block px-4 py-2 rounded-full font-semibold mb-4">2022</div>
+                                <h3 class="text-xl font-semibold mb-2">Sportmanship Awards</h3>
+                                <p class="text-text-secondary">Applauding True Sports Spirit</p>
+                            </div>
+                            <div class="hidden lg:block w-4 h-4 bg-accent rounded-full border-4 border-white shadow-card relative z-10"></div>
+                            <div class="lg:w-1/2 lg:pl-8"></div>
+                        </div>
+
+                        <!-- 2023 -->
+                        <div class="flex flex-col lg:flex-row items-center">
+                            <div class="lg:w-1/2 lg:pr-8"></div>
+                            <div class="hidden lg:block w-4 h-4 bg-success rounded-full border-4 border-white shadow-card relative z-10"></div>
+                            <div class="lg:w-1/2 lg:pl-8 text-center lg:text-left">
+                                <div class="bg-success text-white inline-block px-4 py-2 rounded-full font-semibold mb-4">2023</div>
+                                <h3 class="text-xl font-semibold mb-2">2023 CRC Competition Winners & Sportmanship Awards</h3>
+                                <p class="text-text-secondary">Celebrating Excellence, Effort, and Team Spirit</p>
+                            </div>
+                        </div>
+
+                        <!-- 2024 -->
+                        <div class="flex flex-col lg:flex-row items-center">
+                            <div class="lg:w-1/2 lg:pr-8 text-center lg:text-right">
+                                <div class="bg-primary text-white inline-block px-4 py-2 rounded-full font-semibold mb-4">2024</div>
+                                <h3 class="text-xl font-semibold mb-2">4TH Place Overall & Sportmanship Awards</h3>
+                                <p class="text-text-secondary">Where Determination Meets True Sports Spirit</p>
+                            </div>
+                            <div class="hidden lg:block w-4 h-4 bg-primary rounded-full border-4 border-white shadow-card relative z-10"></div>
+                            <div class="lg:w-1/2 lg:pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Statistics -->
+        <section class="py-16 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">By the Numbers</h2>
+                    <p class="text-xl text-text-secondary">Our impact in measurable terms</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">40+</div>
+                        <h3 class="text-lg font-semibold mb-1">Active Members</h3>
+                        <p class="text-text-secondary text-sm">Passionate students from diverse disciplines</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">20+</div>
+                        <h3 class="text-lg font-semibold mb-1">Projects Completed</h3>
+                        <p class="text-text-secondary text-sm">From simple prototypes to competition-winning robots</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-4xl font-bold text-accent mb-2">20+</div>
+                        <h3 class="text-lg font-semibold mb-1">Competitions Entered</h3>
+                        <p class="text-text-secondary text-sm">20 Consecutive years of participation in CRC</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-4xl font-bold text-success mb-2">3+</div>
+                        <h3 class="text-lg font-semibold mb-1">Awards Won</h3>
+                        <p class="text-text-secondary text-sm">Recognition for technical excellence and innovation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Philosophy -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <img src="assets/education.jpg" 
+                             alt="Students collaborating on robotics project, demonstrating hands-on learning approach with mentorship and peer support" 
+                             class="rounded-lg shadow-card w-full h-96 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">Our Educational Philosophy</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">Learn by Doing</h3>
+                                    <p class="text-text-secondary">We believe the best way to understand robotics is to build, test, fail, and iterate. Every concept is reinforced through practical application.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20a3 3 0 01-3-3v-2a3 3 0 013-3h10a3 3 0 013 3v2a3 3 0 01-3 3H7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">Collaborative Growth</h3>
+                                    <p class="text-text-secondary">Knowledge sharing and peer mentorship create an environment where everyone teaches and everyone learns, regardless of experience level.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">Real-World Impact</h3>
+                                    <p class="text-text-secondary">Every project connects to practical applications, preparing students for industry challenges while solving meaningful problems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facility Tour -->
+        <!-- <section class="py-16 bg-surface"> -->
+            <!-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> -->
+                <!-- <div class="text-center mb-16"> -->
+                    <!-- <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Our Workshop</h2> -->
+                    <!-- <p class="text-xl text-text-secondary">State-of-the-art facilities supporting innovation</p> -->
+                <!-- </div> -->
+
+                <!-- <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+                    <!-- <div class="card"> -->
+                        <!-- <img src="https://images.unsplash.com/photo-1550440949-338514dff2fd"  -->
+                             <!-- alt="Modern 3D printing station with multiple printers creating robotics components and prototypes"  -->
+                             <!-- class="w-full h-48 object-cover rounded-lg mb-4" -->
+                             <!-- onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;"> -->
+                        <!-- <h3 class="text-xl font-semibold mb-2">3D Printing Lab</h3> -->
+                        <!-- <p class="text-text-secondary">Six professional-grade 3D printers for rapid prototyping and custom component creation</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="card"> -->
+                        <!-- <img src="https://images.unsplash.com/photo-1579803164761-ecf6b1d40356"  -->
+                             <!-- alt="Electronics workbench with soldering stations, oscilloscopes, and circuit testing equipment"  -->
+                             <!-- class="w-full h-48 object-cover rounded-lg mb-4" -->
+                             <!-- onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;"> -->
+                        <!-- <h3 class="text-xl font-semibold mb-2">Electronics Station</h3> -->
+                        <!-- <p class="text-text-secondary">Complete electronics workbench with soldering stations, oscilloscopes, and testing equipment</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="card"> -->
+                        <!-- <img src="https://images.unsplash.com/photo-1621926442743-11916d40c022"  -->
+                             <!-- alt="Programming workspace with multiple monitors showing robotics code and simulation software"  -->
+                             <!-- class="w-full h-48 object-cover rounded-lg mb-4" -->
+                             <!-- onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;"> -->
+                        <!-- <h3 class="text-xl font-semibold mb-2">Programming Hub</h3> -->
+                        <!-- <p class="text-text-secondary">Dedicated coding area with high-performance computers and simulation software</p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+
+        <!-- Partnership Showcase -->
+        <!-- <section class="py-16 bg-white"> -->
+            <!-- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> -->
+                <!-- <div class="text-center mb-16"> -->
+                    <!-- <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Our Partners</h2> -->
+                    <!-- <p class="text-xl text-text-secondary">Collaborating with industry leaders and educational institutions</p> -->
+                <!-- </div> -->
+
+                <!-- <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-center"> -->
+                    <!-- <div class="text-center"> -->
+                        <!-- <div class="bg-surface rounded-lg p-6 mb-4"> -->
+                            <!-- <svg class="w-16 h-16 mx-auto text-primary" fill="currentColor" viewBox="0 0 24 24"> -->
+                                <!-- <img src ="assets/main_logo.png" alt ="Our Logo"> -->
+                            <!-- </svg> -->
+                        <!-- </div> -->
+                        <!-- <h3 class="font-semibold">TechCorp Industries</h3> -->
+                        <!-- <p class="text-sm text-text-secondary">Equipment Sponsor</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="text-center"> -->
+                        <!-- <div class="bg-surface rounded-lg p-6 mb-4"> -->
+                            <!-- <svg class="w-16 h-16 mx-auto text-secondary" fill="currentColor" viewBox="0 0 24 24"> -->
+                                <!-- <path d="M12 14l9-5-9-5-9 5 9 5z"/> -->
+                                <!-- <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/> -->
+                            <!-- </svg> -->
+                        <!-- </div> -->
+                        <!-- <h3 class="font-semibold">McGill University</h3> -->
+                        <!-- <p class="text-sm text-text-secondary">Research Partner</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="text-center"> -->
+                        <!-- <div class="bg-surface rounded-lg p-6 mb-4"> -->
+                            <!-- <svg class="w-16 h-16 mx-auto text-accent" fill="currentColor" viewBox="0 0 24 24"> -->
+                                <!-- <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/> -->
+                            <!-- </svg> -->
+                        <!-- </div> -->
+                        <!-- <h3 class="font-semibold">Innovation Quebec</h3> -->
+                        <!-- <p class="text-sm text-text-secondary">Funding Partner</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="text-center"> -->
+                        <!-- <div class="bg-surface rounded-lg p-6 mb-4"> -->
+                            <!-- <svg class="w-16 h-16 mx-auto text-success" fill="currentColor" viewBox="0 0 24 24"> -->
+                                <!-- <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/> -->
+                            <!-- </svg> -->
+                        <!-- </div> -->
+                        <!-- <h3 class="font-semibold">RoboTech Solutions</h3> -->
+                        <!-- <p class="text-sm text-text-secondary">Mentorship Partner</p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+
+        <!-- Recognition & Awards -->
+        <section class="py-16 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Recognition & Awards</h2>
+                    <p class="text-xl text-text-secondary">Celebrating our achievements and milestones</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Canada Robotics Championship</h3>
+                        <p class="text-primary font-medium mb-1">1st Place - 2023</p>
+                        <!-- <p class="text-text-secondary text-sm">Autonomous Navigation Category</p> -->
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Sportmanship Award</h3>
+                        <p class="text-primary font-medium mb-1">Consecutive Winners - 2022 to 2024</p>
+                        <!-- <p class="text-text-secondary text-sm">Canadian Student Engineering Competition</p> -->
+                    </div>
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Canada Robotics Championship</h3>
+                        <p class="text-primary font-medium mb-1">4th place - 2024</p>
+                        <!-- <p class="text-text-secondary text-sm">Dawson College Student Life Awards</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Join Our Story?</h2>
+                <p class="text-xl text-primary-100 mb-8">
+                    Be part of the next chapter in Dawson Robotics' journey. Whether you're a complete beginner or an experienced builder, there's a place for you in our community.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold transition-fast text-lg">
+                        Support Our Team
+                    </a>
+                    <a href="projects.html" class="bg-white text-primary hover:bg-primary-50 px-8 py-4 rounded-lg font-semibold transition-fast text-lg">
+                        View Our Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src ="assets/main_logo.png" alt ="Our Logo" class="logo_end">
+                        <h3 class="text-xl font-bold">Dawson Robotics</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Building the future through robotics education and innovation. Join our community of passionate students and industry professionals.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/dawson_robotics_team?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                        <a href="https://discord.gg/4de29rXUWg" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/discord.png" alt="Discord" class="w-6 h-6">
+                        </a>
+                        <a href="https://www.linkedin.com/company/dawson-robotics-team/" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/link.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="https://pinterest.com/dawsonrobotics" class="text-gray-300 hover:text-primary transition-fast" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/youtube.png" alt="Youtube" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-fast">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary transition-fast">About</a></li>
+                        <li><a href="teams.html" class="text-gray-300 hover:text-primary transition-fast">Teams</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-primary transition-fast">Projects</a></li>
+                        <li><a href="https://dawsoncollege.givecloud.co/product/Robotics-Fundraiser-Donation-Page/dawson-robotics" class="text-gray-300 hover:text-primary transition-fast">Support Us</a></li>
+                        <li><a href="https://discord.gg/4de29rXUWg" class="text-gray-300 hover:text-primary transition-fast">Join Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Dawson College</li>
+                        <li>3040 Sherbrooke St W</li>
+                        <li>Montreal, QC H3Z 1A4</li>
+                        <li>dawsonrobotic@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Dawson Robotics. All Rights Reserved to Pierre-Alexandre M. Fignole.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
