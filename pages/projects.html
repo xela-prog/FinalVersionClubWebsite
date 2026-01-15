@@ -83,190 +83,98 @@
             </div>
         </section>
 
-        <!-- Project Categories Filter -->
-                <!-- <section class="py-12 bg-white">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="flex flex-wrap justify-center gap-4 mb-8">
-                            <button class="filter-btn active" data-category="all">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
-                                </svg>
-                                All Projects
-                            </button>
-                            <button class="filter-btn" data-category="autonomous">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                Autonomous Systems
-                            </button>
-                            <button class="filter-btn" data-category="competition">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                                </svg>
-                                Competition Bots
-                            </button>
-                            <button class="filter-btn" data-category="research">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Research Projects
-                            </button>
-                            <button class="filter-btn" data-category="parts">
-                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20a3 3 0 01-3-3v-2a3 3 0 013-3h10a3 3 0 013 3v2a3 3 0 01-3 3H7z"/>
-                                </svg>
-                                Parts Used
-                            </button>
-                        </div>
-                        <div class="text-center">
-                            <button id="reset-filters" class="text-primary hover:text-primary-600 font-medium transition-fast">
-                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                                </svg>
-                                Reset Filters
-                            </button>
-                        </div>
-                    </div>
-                </section> -->
-
         <!-- Featured Projects -->
         <section id="featured-projects" class="py-16 bg-surface">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Featured Projects</h2>
-                    <p class="text-xl text-text-secondary">Our most impactful and innovative robotics achievements</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Our Robots</h2>
+                    <p class="text-xl text-text-secondary">Competition robots from past and present seasons</p>
                 </div>
 
-                <!-- Project 1: Autonomous Navigation Robot -->
+
+                <!-- Project 1: Mecanum Drive Competition Robot -->
                 <div class="project-card autonomous mb-16">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <div class="flex items-center mb-4">
-                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Completed</span>
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Autonomous Systems</span>
+                                <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Lessons Learned</span>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Competition Robotics</span>
                             </div>
-                            <h3 class="text-3xl font-bold mb-4">Autonomous Navigation Robot</h3>
+                            <h3 class="text-3xl font-bold mb-4">Mecanum Drive Competition Robot</h3>
                             <p class="text-text-secondary mb-6 text-lg leading-relaxed">
-                                Our flagship autonomous navigation system uses advanced computer vision and machine learning algorithms to navigate complex environments. The robot successfully completed a 50-meter obstacle course with 98% accuracy, demonstrating real-world applicability for warehouse automation and search-and-rescue operations.
+                                Our competition robot featured a 4-wheel mecanum drive system for omnidirectional movement, allowing precise alignment with game pieces. The design emphasized simplicity with a passive claw pickup mechanism and a ramp-based launcher system. While the drive system and passive pickup worked effectively, elevator reliability issues highlighted the critical importance of thorough pre-competition testing.
                             </p>
                             <div class="border-accent-left mb-6">
                                 <h4 class="font-semibold mb-2">Technical Specifications</h4>
                                 <ul class="text-text-secondary space-y-1">
-                                    <li>• LIDAR-based SLAM navigation system</li>
-                                    <li>• Real-time object detection using YOLOv5</li>
-                                    <li>• ROS2 framework with custom path planning algorithms</li>
-                                    <li>• 12-hour battery life with autonomous charging capability</li>
+                                    <li>• 4-wheel mecanum drive for omnidirectional movement</li>
+                                    <li>• Passive claw pickup system (minimal moving parts)</li>
+                                    <li>• Elevator lift system with ramp-fed launcher</li>
+                                    <li>• ABS game piece handling capability</li>
                                 </ul>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Computer Vision</span>
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Machine Learning</span>
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">SLAM</span>
-                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm">ROS2</span>
-                            </div>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="javascript:void(0)" class="btn-primary">View Documentation</a>
-                                <a href="javascript:void(0)" class="btn-secondary">GitHub Repository</a>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Mecanum Drive</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Passive Systems</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Game Strategy</span>
+                                <span class="bg-warning-100 text-warning px-3 py-1 rounded-full text-sm">Iterative Design</span>
                             </div>
                         </div>
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1549554443-d204b8540c1f" 
-                                 alt="Autonomous navigation robot with LIDAR sensors and cameras navigating through an obstacle course in laboratory setting" 
-                                 class="rounded-lg shadow-card w-full h-96 object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
-                            <div class="absolute top-4 right-4 bg-accent text-white px-3 py-2 rounded-lg font-semibold">
-                                1st Place Winner
+                            <img src="assets/robot1.jpg"
+                                alt="Competition robot with mecanum wheels and claw mechanism on competition field"
+                                class="rounded-lg shadow-card w-full h-96 object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div class="absolute top-4 right-4 bg-warning text-white px-3 py-2 rounded-lg font-semibold">
+                                Competition Entry
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2: Competition Bot -->
+               <!-- Project 2: 2026 Competition Robot -->
                 <div class="project-card competition mb-16">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
                         <div class="lg:order-2">
                             <div class="flex items-center mb-4">
-                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Champion</span>
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Competition Bot</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">In Progress</span>
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">2026 Season</span>
                             </div>
-                            <h3 class="text-3xl font-bold mb-4">Quebec Robotics Championship Bot</h3>
+                            <h3 class="text-3xl font-bold mb-4">2026 Competition Robot</h3>
                             <p class="text-text-secondary mb-6 text-lg leading-relaxed">
-                                Our competition robot dominated the 2024 Quebec Robotics Championship, securing first place with innovative mechanical design and precision control systems. The bot completed all challenges in record time, showcasing our team's engineering excellence and strategic thinking.
+                                While we cannot reveal the exact details of our current design, what we can say is that we are attempting some pretty interesting design approaches—balancing both complexity and simplicity in innovative ways. Our team is applying lessons learned from previous seasons to create a more reliable and effective competition robot.
                             </p>
                             <div class="border-accent-left mb-6">
-                                <h4 class="font-semibold mb-2">Competition Results</h4>
+                                <h4 class="font-semibold mb-2">What We Can Share</h4>
                                 <ul class="text-text-secondary space-y-1">
-                                    <li>• 1st Place - Quebec Robotics Championship 2024</li>
-                                    <li>• Best Design Award - Innovation in Mechanical Systems</li>
-                                    <li>• Fastest Completion Time: 2:34 minutes</li>
-                                    <li>• Perfect Score: 100/100 points</li>
+                                    <li>• Innovative design philosophy combining complexity with simplicity</li>
+                                    <li>• Improved testing protocols based on previous experience</li>
+                                    <li>• Focus on mechanical reliability and robust construction</li>
+                                    <li>• Competition scheduled for February 18-21st, 2026</li>
                                 </ul>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Precision Control</span>
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Mechanical Design</span>
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Competition Ready</span>
-                            </div>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="javascript:void(0)" class="btn-primary">Competition Video</a>
-                                <a href="javascript:void(0)" class="btn-secondary">Build Guide</a>
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Current Season</span>
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Strategic Design</span>
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm">Reliability Focus</span>
                             </div>
                         </div>
                         <div class="lg:order-1 relative">
-                            <img src="https://images.unsplash.com/photo-1597007519573-0575fd4cc96b" 
-                                 alt="Championship-winning competition robot with precise mechanical arms and sensors on competition field" 
-                                 class="rounded-lg shadow-card w-full h-96 object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
-                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-2 rounded-lg font-semibold">
-                                Championship Winner
+                            <div class="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg shadow-card w-full h-96 flex flex-col items-center justify-center p-8">
+                                <div class="text-center">
+                                    <svg class="w-24 h-24 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                    <h4 class="text-2xl font-bold text-text-primary mb-2">Design Under Wraps</h4>
+                                    <p class="text-text-secondary">Full reveal after February 21st, 2026</p>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 left-4 bg-warning text-white px-3 py-2 rounded-lg font-semibold">
+                                Coming Soon
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 3: Research Project -->
-                <div class="project-card research">
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div class="flex items-center mb-4">
-                                <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">In Progress</span>
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Research Project</span>
-                            </div>
-                            <h3 class="text-3xl font-bold mb-4">AI-Powered Swarm Robotics</h3>
-                            <p class="text-text-secondary mb-6 text-lg leading-relaxed">
-                                Our cutting-edge research project explores collaborative AI systems using multiple small robots working together to solve complex tasks. This project has attracted attention from industry partners and academic institutions, positioning Dawson Robotics at the forefront of swarm intelligence research.
-                            </p>
-                            <div class="border-accent-left mb-6">
-                                <h4 class="font-semibold mb-2">Research Objectives</h4>
-                                <ul class="text-text-secondary space-y-1">
-                                    <li>• Develop distributed decision-making algorithms</li>
-                                    <li>• Implement real-time swarm coordination protocols</li>
-                                    <li>• Test scalability with 10+ robot units</li>
-                                    <li>• Publish findings in peer-reviewed journals</li>
-                                </ul>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
-                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm">Swarm Intelligence</span>
-                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm">Distributed Systems</span>
-                            </div>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="javascript:void(0)" class="btn-primary">Research Paper</a>
-                                <a href="javascript:void(0)" class="btn-secondary">Progress Updates</a>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1723873293997-cf17f5c958d6" 
-                                 alt="Multiple small robots working together in coordinated formation demonstrating swarm intelligence algorithms" 
-                                 class="rounded-lg shadow-card w-full h-96 object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
-                            <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-2 rounded-lg font-semibold">
-                                Research Phase
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Ongoing Projects Dashboard -->
@@ -337,7 +245,7 @@
                     <div class="project-card parts card">
                         <div class="flex items-center justify-between mb-4">
                         </div>
-                        <img src="assets/pulley-top[1].PNG" 
+                        <img src="assets/pulley-top[1].png" 
                              alt="Mounting bracket for servo motor in robotic claw mechanism" 
                              class="w-full h-48 object-cover rounded-lg mb-4 size-auto"
                              onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
